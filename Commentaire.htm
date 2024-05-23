@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forulaire</title>
+</head>
+<body>
+
+ <div class="commentaire">
+    <div class="navbarr">
+        <a href="#" class="lienavcomm">Acceuil</a>
+        <a href="#" class="lienavcomm"> contact</a>
+        <a href="#" class="lienavcomm">A propos</a>
+        <a href="#" class="lienavcomm"> galerie</a>
+    </div>
+    
+ <div class="form">
+    <div class="choix">
+    <h3>Comment trouvez-vous mon Portfolio</h3>
+        <div class="choixx">
+            <input  name="note" type="radio" value="1"> (pas tres interesant) <br>
+            <input  name="note" type="radio" value="2"> (pas tros mal) <br>
+            <input  name="note" type="radio" value="3"> (sympa) <br>
+            <input  name="note" type="radio" value="4" checked="checked"> (j'ai aimé) <br>
+            <input  name="note" type="radio" value="4" > (Gégnial) <br>
+         
+         
+            <p>Qu'avez-vous leplus aimé?<br>
+         
+         <input name="love1" type="checkbox" value="tout le site"> tout le site est chouette <br>
+         <input name="love2" type="checkbox" value="les photos"> les photos <br>
+         <input name="love3" type="checkbox" value="les choix de couleur"> les choix de couleur<br>
+         <input name="love4" type="checkbox" value="Mise en page"> Mise en page <br>
+         <input name="love5" type="checkbox" value="humour"> Votre humour <br>
+         </p>
+        </div>
+  </div>
+    <div class="send">
+    <H3> envoyer votre commentaire par mail</H3>
+        <div class="sendd">
+            <form action="mailto:rogermbaka@gmail.com" subject="commentaire" enctype="text/plain"></form> 
+ <p> <input class="roz"  type="texte" name="nom" placeholder="nom"></p>
+ <p> <input class="roz"  type="texte" name="Prenom" placeholder="Prenom:"></p>
+ 
+ 
+ <textarea  class="roz"  rows="5" cols="30"  name="commentaire" placeholder="commentaire"></textarea> <br>
+  <input class="roz"  type="text" name="e-mail" placeholder="Enter votre adresse mail"> <br>
+
+    
+        <button type="submit" class="er">Envoyer</button>
+        <button type="reset" class="ero">Annuler</button>
+        </div>
+
+    </div>
+ </div>
+
+<marquee behavior="" direction=""></marquee>
+</body>
+</html>
+<style>
+  .commentaire{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+  }  
+  .navbarr{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(147, 163, 158);
+    justify-content: center;
+    align-items: center;
+  }
+  .navbarr:hover{
+    background-color: #D3D3D3;
+  }
+  .lienavcomm{
+    text-decoration: none;
+    color: #1b1616;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.24em;
+    
+    
+  }
+  .lienavcomm:hover{
+    background-color: aquamarine;
+    border-radius: 1.5em;
+    height: 70%;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+  }
+
+  
+  .form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    /* background-color: beige; */
+
+  }
+  .choix{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rosybrown; */
+    align-items: center;
+    justify-content: center;
+
+}
+.choixx{
+     
+    border: 0.5px solid black;
+    width: 23em;
+    height: fit-content;
+    color: #493636;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.choixx:hover{
+    background-color: rgb(117, 163, 148);
+    color: #fff;
+}
+.send{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    justify-content: center;
+    align-items: center;
+}
+.sendd{
+    border: 1px black solid;
+    width: 23em;
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.ero{
+    width: 5em;
+    background-color: red;
+    display: flex;
+    margin: 20px;
+}
+.ero:hover{
+    background-color: #D3D3D3;
+    
+}
+.er{
+    width: 5em;
+    background-color: rgb(24, 138, 9);
+    display: flex;
+}
+.er:hover{
+    background-color: #8b4319;
+    
+}
+.roz{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 17em;
+}
+.roz:hover{
+    background-color: rgb(190, 157, 157);
+    color: #1b1616;
+}
+</style>
